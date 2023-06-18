@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6bgMm0fKqlofDDSOr7XIgvlqBrsmw4T29i7hIHLCmHtD8NSzVuQzonn2OcvJNgre4EvMtfqe0/vhCle8Ro8NoA==",
+  "dgSpecHash": "lEnWAoFibX5WUSV2ArSC7WYGfe2h4U2Jp7bHjQpX8AyhcPbdDNPRj+e8TdpmgP0FWXNSW54DdzGZr8zxdAnC3g==",
   "success": true,
-  "projectFilePath": "D:\\Proj\\ControledeEstoque\\GUI\\GUI.csproj",
+  "projectFilePath": "C:\\Projetos\\ControleEstq\\GUI\\GUI.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

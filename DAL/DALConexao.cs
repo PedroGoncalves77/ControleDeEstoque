@@ -11,12 +11,13 @@ namespace DAL
     {
         private string _stringConexao;
         private SqlConnection _conexao;
-        
+        // Construtor responsavel por realizar a conexao com o banco de dados
         public DALConexao(string dadosConexao) 
         {
             this._conexao = new SqlConnection();
             this._stringConexao = dadosConexao;
             this._conexao.ConnectionString = dadosConexao;
+            
         }
         public string StringConexao { 
             get { return this._stringConexao; }
