@@ -15,9 +15,9 @@ namespace DAL
     {
         private DALConexao _conexao; 
         //Construtor responsavel pela conexao 
-        public DALCategoria(DALConexao cx) 
+        public DALCategoria(DALConexao cnx) 
         {
-            _conexao = cx;
+            _conexao = cnx;
         }
 
         public void Incluir(ModeloCategoria modelo) 
@@ -28,7 +28,7 @@ namespace DAL
             cmd.Parameters.AddWithValue("@nome", modelo.CatNome);
            
             _conexao.Conectar();
-            modelo.CatCod = Convert.ToInt32(cmd.ExecuteScalar());
+            modelo.CatCod = (int)(cmd.ExecuteScalar());
             _conexao.Desconectar();
         }
         public void Alterar(ModeloCategoria modelo) 

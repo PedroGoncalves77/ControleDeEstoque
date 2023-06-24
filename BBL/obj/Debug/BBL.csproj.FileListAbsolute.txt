@@ -1,0 +1,11 @@
+C:\Projetos\ControleEstq\BBL\bin\Debug\BBL.dll
+C:\Projetos\ControleEstq\BBL\bin\Debug\BBL.pdb
+C:\Projetos\ControleEstq\BBL\bin\Debug\DAL.dll
+C:\Projetos\ControleEstq\BBL\bin\Debug\Modelo.dll
+C:\Projetos\ControleEstq\BBL\bin\Debug\DAL.pdb
+C:\Projetos\ControleEstq\BBL\bin\Debug\Modelo.pdb
+C:\Projetos\ControleEstq\BBL\obj\Debug\BBL.csproj.AssemblyReference.cache
+C:\Projetos\ControleEstq\BBL\obj\Debug\BBL.csproj.CoreCompileInputs.cache
+C:\Projetos\ControleEstq\BBL\obj\Debug\BBL.csproj.CopyComplete
+C:\Projetos\ControleEstq\BBL\obj\Debug\BBL.dll
+C:\Projetos\ControleEstq\BBL\obj\Debug\BBL.pdb

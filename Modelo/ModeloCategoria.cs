@@ -11,7 +11,8 @@ namespace Modelo
     public class ModeloCategoria
     {
         private int Cat_cod { get; set; }
-        private String Cat_nome { get; set; }
+        private String Cat_nome { get; set; } 
+        
         // Codigo da categoria
         public int CatCod
         {
@@ -23,7 +24,7 @@ namespace Modelo
         { get { return this.Cat_nome; }
             set {this.CatNome = value; } 
         }
-
+       
 
     }
 }
