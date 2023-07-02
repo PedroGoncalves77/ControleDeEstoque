@@ -37,8 +37,15 @@ namespace GUI
         {
             FormularioDeCadastroDaCategoria formulario = new FormularioDeCadastroDaCategoria();
             formulario.ShowDialog();
-            formulario.AlteraBotoes(1);
+            //formulario.AlteraBotoes(1);
             formulario.Dispose();
+        }
+
+        private void categoriaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ConsultaCategoria consultaCategoria = new ConsultaCategoria();
+            consultaCategoria.ShowDialog();
+            consultaCategoria.Dispose();
         }
     }
 }

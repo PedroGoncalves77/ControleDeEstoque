@@ -68,7 +68,7 @@
             btLocalizar.Text = "Localizar";
             btLocalizar.TextAlign = ContentAlignment.BottomCenter;
             btLocalizar.UseVisualStyleBackColor = true;
-            btLocalizar.Click += button1_Click;
+            btLocalizar.Click += btLocalizar_Click;
             // 
             // btCancelar
             // 
@@ -107,6 +107,7 @@
             btExcluir.Text = "Excluir";
             btExcluir.TextAlign = ContentAlignment.BottomCenter;
             btExcluir.UseVisualStyleBackColor = true;
+            btExcluir.Click += btExcluir_Click;
             // 
             // btAlterar
             // 
@@ -119,6 +120,7 @@
             btAlterar.Text = "Alterar";
             btAlterar.TextAlign = ContentAlignment.BottomCenter;
             btAlterar.UseVisualStyleBackColor = true;
+            btAlterar.Click += btAlterar_Click;
             // 
             // btInserir
             // 

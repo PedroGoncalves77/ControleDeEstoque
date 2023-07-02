@@ -15,7 +15,7 @@ namespace GUI
 {
     public partial class FormularioDeCadastroDaCategoria : Form
     {
-        public string operacao;
+        public string? operacao;
         public void AlteraBotoes(int op)
         {
 
@@ -50,7 +50,7 @@ namespace GUI
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btLocalizar_Click(object sender, EventArgs e)
         {
 
         }
@@ -95,7 +95,7 @@ namespace GUI
                 if (operacao == "inserir")
                 {
                     bllcat.Incluir(modelo);
-                    MessageBox.Show("Cadastro concluido. Código: ");
+                    MessageBox.Show("Cadastro concluido. Código:" + modelo.CatCod.ToString());
 
                 }
                 else
@@ -107,9 +107,36 @@ namespace GUI
                 }
                 LimpaTela();
                 AlteraBotoes(1);
-            }catch(Exception exeption) 
+            }
+            catch (Exception exeption)
             {
                 MessageBox.Show(exeption.Message);
+            }
+        }
+
+        private void btAlterar_Click(object sender, EventArgs e)
+        {
+            operacao = "alterar";
+            AlteraBotoes(2);            
+        }
+
+        private void btExcluir_Click(object sender, EventArgs e)
+        {
+            try 
+            {
+                DialogResult escolha = MessageBox.Show("Deseja excluir o registro?", "Aviso:", MessageBoxButtons.YesNo);
+                if (escolha.ToString() == "Yes") 
+                {
+                    DALConexao conexao = new DALConexao(DadosDaConexao.StringDaConexao);
+                    BLLCategoria bllcat = new(conexao);
+                    bllcat.Excluir(Convert.ToInt32(textoCodigo.Text));
+                    LimpaTela();
+                    AlteraBotoes(1);
+                }
+            }catch(Exception exception) 
+            {
+                MessageBox.Show("Impossivel excluir o regisro,existem dependências em outros locais.",exception.Message);
+                AlteraBotoes(3);
             }
         }
     }
