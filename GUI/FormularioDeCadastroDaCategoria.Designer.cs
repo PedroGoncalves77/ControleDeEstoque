@@ -28,141 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pnDados = new Panel();
-            menuStrip1 = new MenuStrip();
-            cadastroToolStripMenuItem = new ToolStripMenuItem();
-            categoriaToolStripMenuItem = new ToolStripMenuItem();
-            subCategoriaToolStripMenuItem = new ToolStripMenuItem();
-            unidadeDeMedidaToolStripMenuItem = new ToolStripMenuItem();
-            produtoToolStripMenuItem = new ToolStripMenuItem();
-            toolStripSeparator1 = new ToolStripSeparator();
-            clienteToolStripMenuItem = new ToolStripMenuItem();
-            fornecedorToolStripMenuItem = new ToolStripMenuItem();
-            consultaToolStripMenuItem = new ToolStripMenuItem();
-            movimentaçãoToolStripMenuItem = new ToolStripMenuItem();
-            relatórioToolStripMenuItem = new ToolStripMenuItem();
-            ferramentasToolStripMenuItem = new ToolStripMenuItem();
-            sobreToolStripMenuItem = new ToolStripMenuItem();
-            panel2 = new Panel();
+            pnBotoes = new Panel();
             btLocalizar = new Button();
             btCancelar = new Button();
             btSalvar = new Button();
             btExcluir = new Button();
             btAlterar = new Button();
             btInserir = new Button();
+            pnDados = new Panel();
+            textoNome = new TextBox();
+            textoCodigo = new TextBox();
+            label2 = new Label();
+            label1 = new Label();
+            pnBotoes.SuspendLayout();
             pnDados.SuspendLayout();
-            menuStrip1.SuspendLayout();
-            panel2.SuspendLayout();
             SuspendLayout();
             // 
-            // pnDados
+            // pnBotoes
             // 
-            pnDados.Controls.Add(menuStrip1);
-            pnDados.Location = new Point(12, 12);
-            pnDados.Name = "pnDados";
-            pnDados.Size = new Size(751, 398);
-            pnDados.TabIndex = 0;
-            pnDados.Paint += pnDados_Paint;
-            // 
-            // menuStrip1
-            // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { cadastroToolStripMenuItem, consultaToolStripMenuItem, movimentaçãoToolStripMenuItem, relatórioToolStripMenuItem, ferramentasToolStripMenuItem, sobreToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(751, 24);
-            menuStrip1.TabIndex = 0;
-            menuStrip1.Text = "menuStrip1";
-            // 
-            // cadastroToolStripMenuItem
-            // 
-            cadastroToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { categoriaToolStripMenuItem, subCategoriaToolStripMenuItem, unidadeDeMedidaToolStripMenuItem, produtoToolStripMenuItem, toolStripSeparator1, clienteToolStripMenuItem, fornecedorToolStripMenuItem });
-            cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            cadastroToolStripMenuItem.Size = new Size(66, 20);
-            cadastroToolStripMenuItem.Text = "Cadastro";
-            // 
-            // categoriaToolStripMenuItem
-            // 
-            categoriaToolStripMenuItem.Name = "categoriaToolStripMenuItem";
-            categoriaToolStripMenuItem.Size = new Size(177, 22);
-            categoriaToolStripMenuItem.Text = "Categoria";
-            // 
-            // subCategoriaToolStripMenuItem
-            // 
-            subCategoriaToolStripMenuItem.Name = "subCategoriaToolStripMenuItem";
-            subCategoriaToolStripMenuItem.Size = new Size(177, 22);
-            subCategoriaToolStripMenuItem.Text = "SubCategoria";
-            // 
-            // unidadeDeMedidaToolStripMenuItem
-            // 
-            unidadeDeMedidaToolStripMenuItem.Name = "unidadeDeMedidaToolStripMenuItem";
-            unidadeDeMedidaToolStripMenuItem.Size = new Size(177, 22);
-            unidadeDeMedidaToolStripMenuItem.Text = "Unidade de Medida";
-            // 
-            // produtoToolStripMenuItem
-            // 
-            produtoToolStripMenuItem.Name = "produtoToolStripMenuItem";
-            produtoToolStripMenuItem.Size = new Size(177, 22);
-            produtoToolStripMenuItem.Text = "Produto";
-            // 
-            // toolStripSeparator1
-            // 
-            toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new Size(174, 6);
-            // 
-            // clienteToolStripMenuItem
-            // 
-            clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            clienteToolStripMenuItem.Size = new Size(177, 22);
-            clienteToolStripMenuItem.Text = "Cliente ";
-            // 
-            // fornecedorToolStripMenuItem
-            // 
-            fornecedorToolStripMenuItem.Name = "fornecedorToolStripMenuItem";
-            fornecedorToolStripMenuItem.Size = new Size(177, 22);
-            fornecedorToolStripMenuItem.Text = "Fornecedor";
-            // 
-            // consultaToolStripMenuItem
-            // 
-            consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
-            consultaToolStripMenuItem.Size = new Size(69, 20);
-            consultaToolStripMenuItem.Text = "Consulta ";
-            // 
-            // movimentaçãoToolStripMenuItem
-            // 
-            movimentaçãoToolStripMenuItem.Name = "movimentaçãoToolStripMenuItem";
-            movimentaçãoToolStripMenuItem.Size = new Size(99, 20);
-            movimentaçãoToolStripMenuItem.Text = "Movimentação";
-            // 
-            // relatórioToolStripMenuItem
-            // 
-            relatórioToolStripMenuItem.Name = "relatórioToolStripMenuItem";
-            relatórioToolStripMenuItem.Size = new Size(66, 20);
-            relatórioToolStripMenuItem.Text = "Relatório";
-            // 
-            // ferramentasToolStripMenuItem
-            // 
-            ferramentasToolStripMenuItem.Name = "ferramentasToolStripMenuItem";
-            ferramentasToolStripMenuItem.Size = new Size(84, 20);
-            ferramentasToolStripMenuItem.Text = "Ferramentas";
-            // 
-            // sobreToolStripMenuItem
-            // 
-            sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            sobreToolStripMenuItem.Size = new Size(49, 20);
-            sobreToolStripMenuItem.Text = "Sobre";
-            // 
-            // panel2
-            // 
-            panel2.Controls.Add(btLocalizar);
-            panel2.Controls.Add(btCancelar);
-            panel2.Controls.Add(btSalvar);
-            panel2.Controls.Add(btExcluir);
-            panel2.Controls.Add(btAlterar);
-            panel2.Controls.Add(btInserir);
-            panel2.Location = new Point(12, 416);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(760, 133);
-            panel2.TabIndex = 1;
+            pnBotoes.Controls.Add(btLocalizar);
+            pnBotoes.Controls.Add(btCancelar);
+            pnBotoes.Controls.Add(btSalvar);
+            pnBotoes.Controls.Add(btExcluir);
+            pnBotoes.Controls.Add(btAlterar);
+            pnBotoes.Controls.Add(btInserir);
+            pnBotoes.Location = new Point(12, 416);
+            pnBotoes.Name = "pnBotoes";
+            pnBotoes.Size = new Size(751, 133);
+            pnBotoes.TabIndex = 1;
             // 
             // btLocalizar
             // 
@@ -188,6 +81,7 @@
             btCancelar.Text = "Cancelar";
             btCancelar.TextAlign = ContentAlignment.BottomCenter;
             btCancelar.UseVisualStyleBackColor = true;
+            btCancelar.Click += btCancelar_Click;
             // 
             // btSalvar
             // 
@@ -200,6 +94,7 @@
             btSalvar.Text = "Salvar";
             btSalvar.TextAlign = ContentAlignment.BottomCenter;
             btSalvar.UseVisualStyleBackColor = true;
+            btSalvar.Click += btSalvar_Click;
             // 
             // btExcluir
             // 
@@ -236,22 +131,66 @@
             btInserir.Text = "Inserir";
             btInserir.TextAlign = ContentAlignment.BottomCenter;
             btInserir.UseVisualStyleBackColor = true;
+            btInserir.Click += btInserir_Click;
+            // 
+            // pnDados
+            // 
+            pnDados.Controls.Add(textoNome);
+            pnDados.Controls.Add(textoCodigo);
+            pnDados.Controls.Add(label2);
+            pnDados.Controls.Add(label1);
+            pnDados.Location = new Point(12, 12);
+            pnDados.Name = "pnDados";
+            pnDados.Size = new Size(751, 398);
+            pnDados.TabIndex = 2;
+            // 
+            // textoNome
+            // 
+            textoNome.Location = new Point(23, 112);
+            textoNome.Name = "textoNome";
+            textoNome.Size = new Size(700, 23);
+            textoNome.TabIndex = 3;
+            // 
+            // textoCodigo
+            // 
+            textoCodigo.Enabled = false;
+            textoCodigo.Location = new Point(23, 40);
+            textoCodigo.Name = "textoCodigo";
+            textoCodigo.Size = new Size(100, 23);
+            textoCodigo.TabIndex = 2;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(23, 84);
+            label2.Name = "label2";
+            label2.Size = new Size(40, 15);
+            label2.TabIndex = 1;
+            label2.Text = "Nome";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(23, 22);
+            label1.Name = "label1";
+            label1.Size = new Size(46, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Código";
             // 
             // FormularioDeCadastroDaCategoria
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(784, 561);
-            Controls.Add(panel2);
             Controls.Add(pnDados);
-            MainMenuStrip = menuStrip1;
+            Controls.Add(pnBotoes);
             Name = "FormularioDeCadastroDaCategoria";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Formulario Cadastro da Categoria";
+            Load += FormularioDeCadastroDaCategoria_Load;
+            pnBotoes.ResumeLayout(false);
             pnDados.ResumeLayout(false);
             pnDados.PerformLayout();
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
-            panel2.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -263,22 +202,12 @@
         protected Button btExcluir;
         protected Button btAlterar;
         protected Button btCancelar;
-        protected Panel pnDados;
-        protected Panel panel2;
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem cadastroToolStripMenuItem;
-        private ToolStripMenuItem categoriaToolStripMenuItem;
-        private ToolStripMenuItem subCategoriaToolStripMenuItem;
-        private ToolStripMenuItem unidadeDeMedidaToolStripMenuItem;
-        private ToolStripMenuItem produtoToolStripMenuItem;
-        private ToolStripSeparator toolStripSeparator1;
-        private ToolStripMenuItem clienteToolStripMenuItem;
-        private ToolStripMenuItem fornecedorToolStripMenuItem;
-        private ToolStripMenuItem consultaToolStripMenuItem;
-        private ToolStripMenuItem movimentaçãoToolStripMenuItem;
-        private ToolStripMenuItem relatórioToolStripMenuItem;
-        private ToolStripMenuItem ferramentasToolStripMenuItem;
-        private ToolStripMenuItem sobreToolStripMenuItem;
+        protected Panel pnBotoes;
         protected Button btLocalizar;
+        protected Panel pnDados;
+        private TextBox textoNome;
+        private TextBox textoCodigo;
+        private Label label2;
+        private Label label1;
     }
 }

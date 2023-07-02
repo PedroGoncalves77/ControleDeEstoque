@@ -7,10 +7,10 @@
         /// </summary>
         ///
         private System.ComponentModel.IContainer components = null;
-        
-       
 
-       
+
+
+
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
@@ -152,6 +152,7 @@
             Name = "FormularioModeloDeCadastro";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Formulario Modelo De Cadastro";
+            Load += FormularioModeloDeCadastro_Load;
             pnBotoes.ResumeLayout(false);
             ResumeLayout(false);
         }

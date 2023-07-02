@@ -21,8 +21,8 @@ namespace Modelo
         }
         // Nome da categoria
         public String CatNome 
-        { get { return this.Cat_nome; }
-            set {this.CatNome = value; } 
+        { get { return Cat_nome; }
+            set {   Cat_nome = value; } 
         }
        
 

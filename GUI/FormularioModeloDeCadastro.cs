@@ -25,8 +25,8 @@ namespace GUI
 
             if (op == 1)
             {
-                btInserir.Enabled = true;
-                btLocalizar.Enabled = true;
+
+                
             }
             if (op == 2)
             {
@@ -75,6 +75,12 @@ namespace GUI
 
         private void btLocalizar_Click(object sender, EventArgs e)
         {
+        }
+
+        private void FormularioModeloDeCadastro_Load(object sender, EventArgs e)
+        {
+            
+
         }
     }
 }

@@ -28,7 +28,7 @@ namespace DAL
             cmd.Parameters.AddWithValue("@nome", modelo.CatNome);
            
             _conexao.Conectar();
-            modelo.CatCod = (int)(cmd.ExecuteScalar());
+            modelo.CatCod = Convert.ToInt32(cmd.ExecuteScalar());
             _conexao.Desconectar();
         }
         public void Alterar(ModeloCategoria modelo) 

@@ -25,3 +25,10 @@ C:\Projetos\ControleEstq\GUI\obj\Debug\net6.0-windows\GUI.FormularioDeCadastroDa
 C:\Projetos\ControleEstq\GUI\obj\Debug\net6.0-windows\GUI.FormularioModeloDeCadastro.resources
 C:\Projetos\ControleEstq\GUI\obj\Debug\net6.0-windows\GUI.FormularioPrincipal.resources
 C:\Projetos\ControleEstq\GUI\obj\Debug\net6.0-windows\GUI.Properties.Resources.resources
+C:\Projetos\ControleEstq\GUI\obj\Debug\net6.0-windows\GUI.Teste.resources
+C:\Projetos\ControleEstq\GUI\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Projetos\ControleEstq\GUI\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Projetos\ControleEstq\GUI\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Projetos\ControleEstq\GUI\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Projetos\ControleEstq\GUI\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Projetos\ControleEstq\GUI\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

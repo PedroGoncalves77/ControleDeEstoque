@@ -15,12 +15,12 @@ namespace BBL
         }
         public void Incluir(ModeloCategoria modelo) 
         {
-            if (modelo.CatNome.Trim().Length == 0) 
-            {
-                throw new Exception("O Nome da categoria é obrigatorio");
-            }
+            //if (modelo.CatNome.Trim().Length == 0) 
+            //{
+            //    throw new Exception("O Nome da categoria é obrigatorio");
+            //}
             
-            modelo.CatNome = modelo.CatNome.TrimStart().Substring(0,1).ToUpper();
+            //modelo.CatNome = modelo.CatNome.TrimStart().Substring(0,1).ToUpper();
 
             DALCategoria dalObj = new DALCategoria(_conexao);
             dalObj.Incluir(modelo);

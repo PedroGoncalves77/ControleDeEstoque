@@ -12,6 +12,7 @@ namespace GUI
 {
     public partial class FormularioPrincipal : Form
     {
+
         public FormularioPrincipal()
         {
             InitializeComponent();
@@ -36,6 +37,7 @@ namespace GUI
         {
             FormularioDeCadastroDaCategoria formulario = new FormularioDeCadastroDaCategoria();
             formulario.ShowDialog();
+            formulario.AlteraBotoes(1);
             formulario.Dispose();
         }
     }
