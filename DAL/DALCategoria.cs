@@ -54,12 +54,12 @@ namespace DAL
             _conexao.Desconectar();
 
         }
-        public DataTable Localizar(string valor) 
-        {
-            DataTable tabela = new DataTable();
-            SqlDataAdapter data = new SqlDataAdapter("Select * from categoria where cat_nome like '%" + valor + "%'", _conexao.ObjetoConexao);
-            data.Fill(tabela);
-            return tabela;
+        public DataTable Localizar(string valor)
+        { 
+                DataTable tabela = new DataTable();
+                SqlDataAdapter data = new SqlDataAdapter("Select * from categoria where cat_nome like '%" + valor + "%'", _conexao.ObjetoConexao);
+                data.Fill(tabela);
+                return tabela;
 
         }
         public ModeloCategoria CarregaModeloCategoria(int codigo) 
