@@ -15,7 +15,7 @@ namespace GUI
 {
     public partial class FormularioDeCadastroDaCategoria : Form
     {
-        public string? operacao;
+        public string operacao;
         public void AlteraBotoes(int op)
         {
 
@@ -52,7 +52,23 @@ namespace GUI
 
         private void btLocalizar_Click(object sender, EventArgs e)
         {
-
+            ConsultaCategoria consultaCat = new ConsultaCategoria();
+            consultaCat.ShowDialog();
+            if (consultaCat.codigo != 0) 
+            {
+                DALConexao conexao = new(DadosDaConexao.StringDaConexao);
+                BLLCategoria bllCategoria = new(conexao);
+                ModeloCategoria modelo = bllCategoria.CarregaModeloCategoria(consultaCat.codigo);
+                textoCodigo.Text = modelo.CatCod.ToString();
+                textoNome.Text = modelo.CatNome;
+                AlteraBotoes(3);
+            }
+            else
+            {
+                LimpaTela();
+                AlteraBotoes(1);
+            }
+            consultaCat.Dispose();
         }
 
         private void pnDados_Paint(object sender, PaintEventArgs e)

@@ -37,7 +37,7 @@ namespace BBL
                 throw new Exception("O Nome da categoria é obrigatorio");
             }
 
-            modelo.CatNome = modelo.CatNome.TrimStart().Substring(0, 1).ToUpper();
+            modelo.CatNome = modelo.CatNome.TrimStart().Substring(0,1).ToUpper() + modelo.CatNome.Substring(1);
 
             DALCategoria dalObj = new DALCategoria(_conexao);
             dalObj.Alterar(modelo);
