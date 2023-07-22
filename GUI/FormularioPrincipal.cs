@@ -25,7 +25,9 @@ namespace GUI
 
         private void subcategoriaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FormularioDeCadastroSubCategoria f = new();
+            f.ShowDialog();
+            f.Dispose();
         }
 
         private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
@@ -37,7 +39,6 @@ namespace GUI
         {
             FormularioDeCadastroDaCategoria formulario = new FormularioDeCadastroDaCategoria();
             formulario.ShowDialog();
-            //formulario.AlteraBotoes(1);
             formulario.Dispose();
         }
 

@@ -33,3 +33,4 @@ C:\Projetos\ControleEstq\GUI\bin\Debug\net6.0-windows\runtimes\win-x86\native\sn
 C:\Projetos\ControleEstq\GUI\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Projetos\ControleEstq\GUI\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Projetos\ControleEstq\GUI\obj\Debug\net6.0-windows\GUI.ConsultaCategoria.resources
+C:\Projetos\ControleEstq\GUI\obj\Debug\net6.0-windows\GUI.FormularioDeCadastroSubCategoria.resources

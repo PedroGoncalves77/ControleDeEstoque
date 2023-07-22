@@ -25,8 +25,9 @@ namespace GUI
 
             if (op == 1)
             {
+                btInserir.Enabled = true;
+                btLocalizar.Enabled = true;
 
-                
             }
             if (op == 2)
             {
@@ -41,6 +42,11 @@ namespace GUI
                 btCancelar.Enabled = true;
             }
 
+        }
+        public void LimpaTela()
+        {
+            textoCodigo.Clear();
+            textoNome.Clear();
         }
 
         public FormularioModeloDeCadastro()
