@@ -38,10 +38,6 @@
             clientaToolStripMenuItem = new ToolStripMenuItem();
             fornecedorToolStripMenuItem = new ToolStripMenuItem();
             consultaToolStripMenuItem = new ToolStripMenuItem();
-            movimentaçãoToolStripMenuItem = new ToolStripMenuItem();
-            relatórioToolStripMenuItem = new ToolStripMenuItem();
-            ferramnetasToolStripMenuItem = new ToolStripMenuItem();
-            sobreToolStripMenuItem = new ToolStripMenuItem();
             categoriaToolStripMenuItem1 = new ToolStripMenuItem();
             subcategoriaToolStripMenuItem1 = new ToolStripMenuItem();
             unidadeDeMedidaToolStripMenuItem1 = new ToolStripMenuItem();
@@ -49,6 +45,10 @@
             toolStripSeparator2 = new ToolStripSeparator();
             clienteToolStripMenuItem = new ToolStripMenuItem();
             fornecedorToolStripMenuItem1 = new ToolStripMenuItem();
+            movimentaçãoToolStripMenuItem = new ToolStripMenuItem();
+            relatórioToolStripMenuItem = new ToolStripMenuItem();
+            ferramnetasToolStripMenuItem = new ToolStripMenuItem();
+            sobreToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -119,30 +119,6 @@
             consultaToolStripMenuItem.Size = new Size(66, 20);
             consultaToolStripMenuItem.Text = "Consulta";
             // 
-            // movimentaçãoToolStripMenuItem
-            // 
-            movimentaçãoToolStripMenuItem.Name = "movimentaçãoToolStripMenuItem";
-            movimentaçãoToolStripMenuItem.Size = new Size(99, 20);
-            movimentaçãoToolStripMenuItem.Text = "Movimentação";
-            // 
-            // relatórioToolStripMenuItem
-            // 
-            relatórioToolStripMenuItem.Name = "relatórioToolStripMenuItem";
-            relatórioToolStripMenuItem.Size = new Size(66, 20);
-            relatórioToolStripMenuItem.Text = "Relatório";
-            // 
-            // ferramnetasToolStripMenuItem
-            // 
-            ferramnetasToolStripMenuItem.Name = "ferramnetasToolStripMenuItem";
-            ferramnetasToolStripMenuItem.Size = new Size(84, 20);
-            ferramnetasToolStripMenuItem.Text = "Ferramnetas";
-            // 
-            // sobreToolStripMenuItem
-            // 
-            sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            sobreToolStripMenuItem.Size = new Size(49, 20);
-            sobreToolStripMenuItem.Text = "Sobre";
-            // 
             // categoriaToolStripMenuItem1
             // 
             categoriaToolStripMenuItem1.Name = "categoriaToolStripMenuItem1";
@@ -155,6 +131,7 @@
             subcategoriaToolStripMenuItem1.Name = "subcategoriaToolStripMenuItem1";
             subcategoriaToolStripMenuItem1.Size = new Size(180, 22);
             subcategoriaToolStripMenuItem1.Text = "Subcategoria";
+            subcategoriaToolStripMenuItem1.Click += subcategoriaToolStripMenuItem1_Click;
             // 
             // unidadeDeMedidaToolStripMenuItem1
             // 
@@ -184,6 +161,30 @@
             fornecedorToolStripMenuItem1.Name = "fornecedorToolStripMenuItem1";
             fornecedorToolStripMenuItem1.Size = new Size(180, 22);
             fornecedorToolStripMenuItem1.Text = "Fornecedor";
+            // 
+            // movimentaçãoToolStripMenuItem
+            // 
+            movimentaçãoToolStripMenuItem.Name = "movimentaçãoToolStripMenuItem";
+            movimentaçãoToolStripMenuItem.Size = new Size(99, 20);
+            movimentaçãoToolStripMenuItem.Text = "Movimentação";
+            // 
+            // relatórioToolStripMenuItem
+            // 
+            relatórioToolStripMenuItem.Name = "relatórioToolStripMenuItem";
+            relatórioToolStripMenuItem.Size = new Size(66, 20);
+            relatórioToolStripMenuItem.Text = "Relatório";
+            // 
+            // ferramnetasToolStripMenuItem
+            // 
+            ferramnetasToolStripMenuItem.Name = "ferramnetasToolStripMenuItem";
+            ferramnetasToolStripMenuItem.Size = new Size(84, 20);
+            ferramnetasToolStripMenuItem.Text = "Ferramnetas";
+            // 
+            // sobreToolStripMenuItem
+            // 
+            sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
+            sobreToolStripMenuItem.Size = new Size(49, 20);
+            sobreToolStripMenuItem.Text = "Sobre";
             // 
             // FormularioPrincipal
             // 

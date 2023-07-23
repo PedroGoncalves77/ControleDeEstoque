@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
+﻿
 namespace GUI
 {
     public partial class FormularioPrincipal : Form
@@ -47,6 +38,13 @@ namespace GUI
             ConsultaCategoria consultaCategoria = new ConsultaCategoria();
             consultaCategoria.ShowDialog();
             consultaCategoria.Dispose();
+        }
+
+        private void subcategoriaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormularioConsultaSubCategoria consulta = new FormularioConsultaSubCategoria();
+            consulta.ShowDialog();
+            consulta.Dispose();
         }
     }
 }
