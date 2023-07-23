@@ -45,8 +45,7 @@ namespace GUI
         }
         public void LimpaTela()
         {
-            textoCodigo.Clear();
-            textoNome.Clear();
+            
         }
 
         public FormularioModeloDeCadastro()
