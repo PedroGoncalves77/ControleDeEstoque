@@ -143,7 +143,7 @@ namespace GUI
                 }
             }catch(Exception exception) 
             {
-                MessageBox.Show("Impossivel excluir o regisro,existem dependências em outros locais.",exception.Message);
+                MessageBox.Show("Impossivel excluir o regisro,existem dependências em outros locais.");
                 AlteraBotoes(3);
             }
         }

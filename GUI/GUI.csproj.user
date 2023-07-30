@@ -19,7 +19,7 @@
     <Compile Update="FormularioPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Teste.cs">
+    <Compile Update="FormularioCadastoUnidadeDeMedida.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
