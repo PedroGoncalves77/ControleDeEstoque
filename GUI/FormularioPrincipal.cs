@@ -53,5 +53,12 @@ namespace GUI
             formularioCadastro.ShowDialog();
             formularioCadastro.Dispose();
         }
+
+        private void unidadeDeMedidaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormularioConsultaUnidadeDeMedida formularioConsulta = new();
+            formularioConsulta.ShowDialog();
+            formularioConsulta.Dispose();
+        }
     }
 }

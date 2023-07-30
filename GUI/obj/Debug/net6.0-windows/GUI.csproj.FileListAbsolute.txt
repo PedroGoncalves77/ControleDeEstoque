@@ -35,3 +35,4 @@ C:\Projetos\ControleEstq\GUI\obj\Debug\net6.0-windows\GUI.ConsultaCategoria.reso
 C:\Projetos\ControleEstq\GUI\obj\Debug\net6.0-windows\GUI.FormularioDeCadastroSubCategoria.resources
 C:\Projetos\ControleEstq\GUI\obj\Debug\net6.0-windows\GUI.FormularioConsultaSubCategoria.resources
 C:\Projetos\ControleEstq\GUI\obj\Debug\net6.0-windows\GUI.FormularioCadastroUnidadeDeMedida.resources
+C:\Projetos\ControleEstq\GUI\obj\Debug\net6.0-windows\GUI.FormularioConsultaUnidadeDeMedida.resources
